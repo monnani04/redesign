@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한솥도시락</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Material Symbols -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    /> -->
+    <!-- swiper slide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- swiper slide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">
+          <a href="#">
+            <img src="images/header_logo-1.png" alt="한솥로고" />
+          </a>
+        </h1>
+        <!-- mobileBtn -->
+        <div class="mb-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- //mobileBtn -->
+        <nav>
+          <ul class="mainMenu">
+            <li>
+              <a href="#">메뉴</a>
+              <ul class="subMenu">
+                <li><a href="#">전체 메뉴</a></li>
+                <li><a href="#">신메뉴/행사</a></li>
+                <li><a href="#">사각도시락</a></li>
+                <li><a href="#">보울도시락</a></li>
+                <li><a href="#">실속반찬</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">브랜드</a>
+              <ul class="subMenu">
+                <li><a href="#">브랜드 스토리</a></li>
+                <li><a href="#">브랜드 철학</a></li>
+                <li><a href="#">브랜드 유산</a></li>
+                <li><a href="#">한솥의 약속</a></li>
+                <li><a href="#">한솥의 비전</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이벤트</a>
+              <ul class="subMenu">
+                <li><a href="#">한솥 NEWS</a></li>
+                <li><a href="#">이 달의 이벤트</a></li>
+                <li><a href="#">신규점 오픈 이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">창업</a>
+              <ul class="subMenu">
+                <li><a href="#">About 한솥</a></li>
+                <li><a href="#">성공수기</a></li>
+                <li><a href="#">창업개설절차</a></li>
+                <li><a href="#">예상 창업 비용</a></li>
+                <li><a href="#">창업 문의</a></li>
+                <li><a href="#">창업설명회 일정&middot;신청</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">한솥</a>
+              <ul class="subMenu">
+                <li><a href="#">연혁&수상</a></li>
+                <li><a href="#">오시는 길</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">인재채용</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-sns">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li class="instagram">
+            <a href="#">인스타그램</a>
+          </li>
+          <li class="facebook">
+            <a href="#">페이스북</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- //header -->
+
+    <!-- mobileMenu -->
+    <div class="mb-menu">
+      <ul class="mb-sns">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+      </ul>
+      <ul class="mb-mainMenu">
+        <li>
+          <a href="#" class="mb-mainMenu-a"
+            >메뉴
+            <span class="material-symbols-outlined">expand_more</span>
+          </a>
+          <ul class="mb-subMenu">
+            <li><a href="#">전체 메뉴</a></li>
+            <li><a href="#">신메뉴/행사</a></li>
+            <li><a href="#">사각도시락</a></li>
+            <li><a href="#">보울도시락</a></li>
+            <li><a href="#">실속반찬</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="mb-mainMenu-a"
+            >브랜드
+            <span class="material-symbols-outlined">expand_more</span>
+          </a>
+          <ul class="mb-subMenu">
+            <li><a href="#">브랜드 스토리</a></li>
+            <li><a href="#">브랜드 철학</a></li>
+            <li><a href="#">브랜드 유산</a></li>
+            <li><a href="#">한솥의 약속</a></li>
+            <li><a href="#">한솥의 비전</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="mb-mainMenu-a"
+            >이벤트
+            <span class="material-symbols-outlined">expand_more</span>
+          </a>
+          <ul class="mb-subMenu">
+            <li><a href="#">한솥 NEWS</a></li>
+            <li><a href="#">이 달의 이벤트</a></li>
+            <li><a href="#">신규점 오픈 이벤트</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="mb-mainMenu-a"
+            >창업
+            <span class="material-symbols-outlined">expand_more</span>
+          </a>
+          <ul class="mb-subMenu">
+            <li><a href="#">About 한솥</a></li>
+            <li><a href="#">성공수기</a></li>
+            <li><a href="#">창업개설절차</a></li>
+            <li><a href="#">예상 창업 비용</a></li>
+            <li><a href="#">창업 문의</a></li>
+            <li><a href="#">창업설명회 일정&middot;신청</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="mb-mainMenu-a"
+            >한솥
+            <span class="material-symbols-outlined">expand_more</span>
+          </a>
+          <ul class="mb-subMenu">
+            <li><a href="#">연혁&수상</a></li>
+            <li><a href="#">오시는 길</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">인재채용</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="mbMenu_close">
+        <span class="material-symbols-outlined">close</span>
+      </div>
+    </div>
+    <!-- //mobileMenu -->
+
+    <!-- main -->
+    <main>
+      <!-- visual -->
+      <section class="visual">
+        <div class="swiper sw-visual">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="visual-slide01"> </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="visual-slide02"> </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="visual-slide03"> </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="visual-slide04"> </a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper sw-mb-visual">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="visual-slide01"> </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="visual-slide02"> </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="visual-slide03"> </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="visual-slide04"> </a>
+            </div>
+          </div>
+        </div> -->
+        <div class="control-box clearfix">
+          <div class="swiper-pagination"></div>
+          <div class="sw-visual-play">
+            <span class="pause-btn">
+              pause
+              <!-- play -->
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- newMenu -->
+      <section class="newMenu section">
+        <div class="container">
+          <div class="newMenu-top Menu-top">
+            <h2 data-aos="fade-down">새로 나온 <span>상품</span>이에요</h2>
+            <a href="#" class="more" data-aos="fade-down">더 보기</a>
+          </div>
+          <div class="newMenu-bottom" data-aos="fade-up" data-aos-delay="400">
+            <div class="swiper sw-newMenu">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="box">
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/new01.png" alt="이남장 설렁탕" />
+                      </div>
+                      <h3>이남장 설렁탕</h3>
+                      <p>7,900원</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box">
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/new02.png" alt="제육돈까스 도련님" />
+                      </div>
+                      <h3>제육돈까스 도련님</h3>
+                      <p>4,900원</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box">
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/new03.png" alt="김피탕" />
+                      </div>
+                      <h3>김피탕</h3>
+                      <p>5,500원</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box">
+                    <a href="#">
+                      <div class="img-box">
+                        <img
+                          src="images/new04.png"
+                          alt="사골 조랭이떡 만둣국"
+                        />
+                      </div>
+                      <h3>사골 조랭이떡 만둣국</h3>
+                      <p>5,900원</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box">
+                    <a href="#">
+                      <div class="img-box">
+                        <img
+                          src="images/new05.png"
+                          alt="한우 함박스테이크 & 반달 돈까스"
+                        />
+                      </div>
+                      <h3>한우 함박스테이크 & 반달 돈까스</h3>
+                      <p>8,900원</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box">
+                    <a href="#">
+                      <div class="img-box">
+                        <img
+                          src="images/new05.png"
+                          alt="한우함박스테이크&토네이도소세지"
+                        />
+                      </div>
+                      <h3>한우함박스테이크&토네이도소세지</h3>
+                      <p>8,900원</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="sw-newMenu-prev arrow">prev</button>
+            <button type="button" class="sw-newMenu-next arrow">next</button>
+          </div>
+        </div>
+      </section>
+      <!-- //newMenu -->
+
+      <!-- bestMenu -->
+      <section class="bestMenu section">
+        <div class="bg" data-aos="fade-up">
+          <span>한솥의 인기 메뉴를 살펴보세요!</span>
+        </div>
+        <div class="container">
+          <div class="bestMenu-top Menu-top">
+            <h2 data-aos="fade-down">한솥 인기 메뉴</h2>
+            <a href="#" class="more" data-aos="fade-down">더 보기</a>
+          </div>
+          <div class="bestMenu-bottom" data-aos="fade-up" data-aos-delay="400">
+            <ul class="tabList">
+              <li class="on"><a href="square">사각도시락</a></li>
+              <li><a href="bowl">보울도시락</a></li>
+              <li><a href="premium">프리미엄</a></li>
+              <li><a href="sidedish">실속반찬</a></li>
+            </ul>
+            <div class="tabPanel focus" id="square">
+              <h3 class="tabTitle">사각도시락</h3>
+              <div class="swiper sw-bestMenu">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/fork-cutlet.png"
+                            alt="돈까스도련님"
+                          />
+                        </div>
+                        <h3>돈까스도련님</h3>
+                        <p>4,900원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/sweet-sour-pork.png"
+                            alt="탕수육도련님 고기고기"
+                          />
+                        </div>
+                        <h3>탕수육도련님 고기고기</h3>
+                        <p>6,100원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/double-cutlet.png" alt="카츠카츠" />
+                        </div>
+                        <h3>카츠카츠</h3>
+                        <p>4,900원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/grilled-charcoal.png"
+                            alt="숯불 직화구이"
+                          />
+                        </div>
+                        <h3>숯불 직화구이</h3>
+                        <p>6,800원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/beef-bulgogi.png" alt="소불고기" />
+                        </div>
+                        <h3>소불고기</h3>
+                        <p>5,700원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/jeyuk-bokkeum.png" alt="제육볶음" />
+                        </div>
+                        <h3>제육볶음</h3>
+                        <p>4,700원</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="sw-bestMenu-prev arrow">prev</button>
+              <button type="button" class="sw-bestMenu-next arrow">next</button>
+            </div>
+            <div class="tabPanel" id="bowl">
+              <h3 class="tabTitle">보울도시락</h3>
+              <div class="swiper sw-bestMenu">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/mega-chicken-mayo.png"
+                            alt="메가치킨마요"
+                          />
+                        </div>
+                        <h3>메가치킨마요</h3>
+                        <p>6,200원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/big-chicken-mayo.png"
+                            alt="빅치킨마요"
+                          />
+                        </div>
+                        <h3>빅치킨마요</h3>
+                        <p>4,400원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/chicken-mayo.png" alt="치킨마요" />
+                        </div>
+                        <h3>치킨마요</h3>
+                        <p>3,800원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/tuna-mayo.png" alt="참치마요" />
+                        </div>
+                        <h3>참치마요</h3>
+                        <p>3,600원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/spam-mayo.png" alt="스팸마요" />
+                        </div>
+                        <h3>스팸마요</h3>
+                        <p>4,000원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/spam-kimchi-fried-rice.png"
+                            alt="스팸 김치볶음밥"
+                          />
+                        </div>
+                        <h3>스팸 김치볶음밥</h3>
+                        <p>4,900원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/spam-iron-plate-fried-rice.png"
+                            alt="스팸 철판볶음밥"
+                          />
+                        </div>
+                        <h3>스팸 철판볶음밥</h3>
+                        <p>4,900원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/original-cheese-dakgalbi-rice.png"
+                            alt="오리지널 치즈 닭갈비덮밥"
+                          />
+                        </div>
+                        <h3>오리지널 치즈 닭갈비덮밥</h3>
+                        <p>6,000원</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="sw-bestMenu-prev arrow">prev</button>
+              <button type="button" class="sw-bestMenu-next arrow">next</button>
+            </div>
+            <div class="tabPanel" id="premium">
+              <h3 class="tabTitle">프리미엄</h3>
+              <div class="swiper sw-bestMenu">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/apricot-blossom.png" alt="매화" />
+                        </div>
+                        <h3>매화</h3>
+                        <p>10,600원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/azalea.png" alt="진달래" />
+                        </div>
+                        <h3>진달래</h3>
+                        <p>8,000원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/sunflower.png" alt="해바라기" />
+                        </div>
+                        <h3>해바라기</h3>
+                        <p>10,000원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/forsythia.png" alt="개나리" />
+                        </div>
+                        <h3>개나리</h3>
+                        <p>8,700원</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="sw-bestMenu-prev arrow">prev</button>
+              <button type="button" class="sw-bestMenu-next arrow">next</button>
+            </div>
+            <div class="tabPanel" id="sidedish">
+              <h3 class="tabTitle">실속반찬</h3>
+              <div class="swiper sw-bestMenu">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/ripe-kimchi-stew.png"
+                            alt="반찬 묵은지김치찌개"
+                          />
+                        </div>
+                        <h3>반찬 묵은지김치찌개</h3>
+                        <p>4,400원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/kimchi-budae-stew.png"
+                            alt="반찬 김치 부대찌개"
+                          />
+                        </div>
+                        <h3>반찬 김치 부대찌개</h3>
+                        <p>4,900원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/chicken.png" alt="반찬 치킨" />
+                        </div>
+                        <h3>반찬 치킨</h3>
+                        <p>3,800원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img src="images/meat.png" alt="반찬 고기고기" />
+                        </div>
+                        <h3>반찬 고기고기</h3>
+                        <p>3,600원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/side-pork-cutlet.png"
+                            alt="반찬 돈까스도련님"
+                          />
+                        </div>
+                        <h3>반찬 돈까스도련님</h3>
+                        <p>4,100원</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <a href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/side-jeyuk-bokkeum.png"
+                            alt="반찬 제육볶음"
+                          />
+                        </div>
+                        <h3>반찬 제육볶음</h3>
+                        <p>3,500원</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="sw-bestMenu-prev arrow">prev</button>
+              <button type="button" class="sw-bestMenu-next arrow">next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //bestMenu -->
+
+      <!-- notice -->
+      <section class="notice section">
+        <div class="container">
+          <div class="event" data-aos="fade-up">
+            <div class="notice-top">
+              <h2>이달의 이벤트</h2>
+              <a href="#" class="more">더 보기</a>
+            </div>
+            <div class="notice-bottom">
+              <ul>
+                <li>
+                  <a href="#">[3월 수량한정 신메뉴] '이남장 설렁탕'</a>
+                  <span class="date">2024.03.01</span>
+                </li>
+                <li>
+                  <a href="#">[3월 기간한정 신메뉴] '제육돈까스 도련님'</a>
+                  <span class="date">2024.03.01</span>
+                </li>
+                <li>
+                  <a href="#">[3월 기간한정 신메뉴] '김피탕'</a>
+                  <span class="date">2024.03.01</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="news" data-aos="fade-down">
+            <div class="notice-top">
+              <h2>한솥 NEWS</h2>
+              <a href="#" class="more">더 보기</a>
+            </div>
+            <div class="notice-bottom">
+              <ul>
+                <li>
+                  <a href="#">한솥도시락, 가성비 K-소울푸드 신메뉴 2종 출시</a>
+                  <span class="date">2024.03.08</span>
+                </li>
+                <li>
+                  <a href="#"
+                    >한솥, 성시경 '인생 설렁탕' 이남장과 협업 도시락 출시</a
+                  >
+                  <span class="date">2024.03.03</span>
+                </li>
+                <li>
+                  <a href="#">[2024 소비자 선정 최고의 브랜드 대상] 한솥</a>
+                  <span class="date">2024.02.06</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //notice -->
+
+      <!-- brand -->
+      <section class="brand section">
+        <div class="container">
+          <div class="promise" data-aos="fade-up">
+            <img src="images/hansot_promise.png" alt="한솥의 약속" />
+            <div class="txt-box">
+              <h3>한솥의 약속</h3>
+              <p>따뜻한 도시락으로<br />지역사회에 공헌한다</p>
+            </div>
+          </div>
+          <div class="philosophy on" data-aos="fade-down">
+            <img src="images/hansot_philosophy.png" alt="한솥의 철학" />
+            <div class="txt-box">
+              <h3>한솥의 철학</h3>
+              <p>든든한 솥밥을 위해<br />한솥이 지키고,<br />키워가는 것들</p>
+            </div>
+          </div>
+          <div class="story" data-aos="fade-up">
+            <img src="images/brandstory.png" alt="브랜드스토리" />
+            <div class="txt-box">
+              <h3>브랜드 스토리</h3>
+              <p>갓 지은 진심 한 끼에는<br />힘이 있습니다</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //brand -->
+    </main>
+    <!-- //main -->
+
+    <!-- quick menu -->
+    <div class="quick-menu">
+      <ul>
+        <li class="find">
+          <a href="#" id="find">
+            <span></span>
+            매장찾기
+          </a>
+        </li>
+        <li class="customer-center">
+          <a href="#" id="customer-center">
+            <span></span>
+            고객센터
+          </a>
+        </li>
+        <li class="startup">
+          <a href="#" id="startup">
+            <span></span>
+            창업문의
+          </a>
+        </li>
+        <li class="gotop">
+          <a href="#" id="gotop">
+            <span></span>
+            맨 위로
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //quick menu -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top clearfix">
+          <ul class="customer-service">
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">협력업체등록</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+          <ul class="sns">
+            <li class="instagram"><a href="#">instagram</a></li>
+            <li class="facebook"><a href="#">facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <ul class="info">
+            <li>서울특별시 강남구 압구정로 459(청담동, 한솥빌딩)</li>
+            <li>대표이사 이영덕, 이하림</li>
+            <li>사업자등록번호 214-81-96569</li>
+          </ul>
+          <ul class="contact">
+            <li>T. 02-585-1114</li>
+            <li>F. 02-598-1116</li>
+            <li>E. webmaster@hsd.co.kr</li>
+          </ul>
+          <ul class="group-order">
+            <li>단체주문 1644-3288</li>
+          </ul>
+        </div>
+        <img
+          src="images/logo_webaward2017.png"
+          alt="Web Award Korea 2017 프랜차이즈분야 대상"
+        />
+        <p>COPYRIGHT&copy;(주)한솥. ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </body>
+</html>
